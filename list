@@ -1,0 +1,29 @@
+if __name__ == '__main__':
+    N = int(input())
+    l=list()
+    for i in range(N):
+        if i==0:
+            l.insert(0,5)
+        elif i==1:
+            l.insert(1,10)
+        elif i==2:
+            l.insert(0,6)
+        elif i==3:
+            print(l)
+        elif i==4:
+            l.remove(6)
+        elif i==5:
+            l.append(9)
+        elif i==6:
+            l.append(1)
+        elif i==7:
+            l.sort()
+        elif i==8:
+            print(l)
+        elif i==9:
+            l.pop()
+            
+        elif i==10:
+            l.reverse()
+        elif i==11:
+            print(l)
