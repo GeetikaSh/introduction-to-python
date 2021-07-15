@@ -2,28 +2,18 @@ if __name__ == '__main__':
     N = int(input())
     l=list()
     for i in range(N):
-        if i==0:
-            l.insert(0,5)
-        elif i==1:
-            l.insert(1,10)
-        elif i==2:
-            l.insert(0,6)
-        elif i==3:
+        com=input().split()
+        if com[0]=='insert':
+            l.insert(int(com[1]),int(com[2]))
+        elif com[0]=='print':
             print(l)
-        elif i==4:
-            l.remove(6)
-        elif i==5:
-            l.append(9)
-        elif i==6:
-            l.append(1)
-        elif i==7:
+        elif com[0]=='remove':
+            l.remove(int(com[1]))
+        elif com[0]=='append':
+            l.append(int(com[1]))
+        elif com[0]=='sort':
             l.sort()
-        elif i==8:
-            print(l)
-        elif i==9:
+        elif com[0]=='pop':
             l.pop()
-            
-        elif i==10:
+        elif com[0]=='reverse':
             l.reverse()
-        elif i==11:
-            print(l)
